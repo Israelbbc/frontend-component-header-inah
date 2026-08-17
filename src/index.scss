@@ -135,3 +135,29 @@ $rounded-pill: 50rem  !default;
     border-radius: var(--pgn-size-rounded-pill, $rounded-pill);
   }
 }
+
+// ===== Personalización institucional INAH =====
+.site-header-desktop {
+  background: #000000 !important;
+  border-bottom: 3px solid #621132;
+  box-shadow: none;
+
+  .nav-link {
+    color: #ffffff !important;
+    text-decoration: none;
+  }
+
+  .main-nav .nav-link:hover,
+  .main-nav .nav-link:focus,
+  .main-nav .nav-link.active,
+  .secondary-menu-container .nav-link:hover,
+  .secondary-menu-container .nav-link:focus,
+  .secondary-menu-container .nav-link.active {
+    background: transparent !important;
+    color: #cccccc !important;
+  }
+
+  .logo img {
+    height: 2.2rem; // un poco más grande que el default (1.75rem)
+  }
+}
