@@ -160,4 +160,30 @@ $rounded-pill: 50rem  !default;
   .logo img {
     height: 2.2rem; // un poco más grande que el default (1.75rem)
   }
+
+  // INAH: botones de Login/Registrarse en blanco
+  .secondary-menu-container {
+    .btn-link {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $white;
+        opacity: 0.85;
+      }
+    }
+
+    .btn-outline-primary {
+      color: $white;
+      border-color: $white;
+      background: transparent;
+
+      &:hover,
+      &:focus {
+        color: var(--pgn-color-black, #000);
+        background: $white;
+        border-color: $white;
+      }
+    }
+  }
 }
