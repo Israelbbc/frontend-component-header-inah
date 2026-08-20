@@ -163,6 +163,18 @@ $rounded-pill: 50rem  !default;
 
   // INAH: botones de Login/Registrarse en blanco
   .secondary-menu-container {
+    .btn.user-menu-trigger-inah {
+      color: #000000 !important;
+      border-color: #000000 !important;
+      background: $white;
+
+      &:hover,
+      &:focus {
+        background: rgba(255, 255, 255, 0.85) !important;
+        color: #000000 !important;
+      }
+    }
+
     .btn-link {
       color: $white;
 
@@ -183,6 +195,35 @@ $rounded-pill: 50rem  !default;
         color: var(--pgn-color-black, #000);
         background: $white;
         border-color: $white;
+      }
+    }
+  }
+
+  .theme-toggle-button {
+    .light-theme-icon,
+    .dark-theme-icon {
+      color: #ffffff !important;
+
+      .pgn__icon,
+      svg {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+      }
+    }
+
+    // INAH: pastilla del switch en blanco sobre fondo negro
+    .toggle-switch .switch {
+      .slider {
+        background-color: transparent !important;
+        border: 2px solid #ffffff;
+
+        &::before {
+          background-color: #ffffff !important;
+        }
+      }
+
+      input:checked + .slider {
+        background-color: rgba(255, 255, 255, 0.2) !important;
       }
     }
   }
