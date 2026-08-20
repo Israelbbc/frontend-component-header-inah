@@ -211,20 +211,18 @@ $rounded-pill: 50rem  !default;
       }
     }
 
-    // INAH: pastilla del switch en blanco sobre fondo negro
+    // INAH: pastilla sólida, replicando la contrucción de Paragon
     .toggle-switch .switch {
       .slider {
-        background-color: rgba(255, 255, 255, 0.15) !important;
-        outline: 2px solid #ffffff;
-        outline-offset: -2px;
+        background-color: #4d4d4d !important; // gris oscuro (estado apagado, sobre header negro)
 
         &::before {
-          background-color: #ffffff !important;
+          background-color: #ffffff !important; // círculo blanco, igual que el original
         }
       }
 
       input:checked + .slider {
-        background-color: rgba(255, 255, 255, 0.35) !important;
+        background-color: #cccccc !important; // gris claro (estado activado)
       }
     }
   }
