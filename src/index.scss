@@ -214,8 +214,9 @@ $rounded-pill: 50rem  !default;
     // INAH: pastilla del switch en blanco sobre fondo negro
     .toggle-switch .switch {
       .slider {
-        background-color: transparent !important;
-        border: 2px solid #ffffff;
+        background-color: rgba(255, 255, 255, 0.15) !important;
+        outline: 2px solid #ffffff;
+        outline-offset: -2px;
 
         &::before {
           background-color: #ffffff !important;
@@ -223,8 +224,19 @@ $rounded-pill: 50rem  !default;
       }
 
       input:checked + .slider {
-        background-color: rgba(255, 255, 255, 0.2) !important;
+        background-color: rgba(255, 255, 255, 0.35) !important;
       }
+    }
+  }
+
+  // INAH: campana de notificaciones en blanco
+  #notificationIcon {
+    color: #ffffff !important;
+
+    svg,
+    path {
+      fill: #ffffff !important;
+      color: #ffffff !important;
     }
   }
 }
