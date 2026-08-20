@@ -231,12 +231,13 @@ $rounded-pill: 50rem  !default;
 
   // INAH: campana de notificaciones en blanco
   #notificationIcon {
-    color: #ffffff !important;
+    .text-primary-500 {
+      color: #ffffff !important;
+    }
 
     svg,
     path {
       fill: #ffffff !important;
-      color: #ffffff !important;
     }
   }
 }
