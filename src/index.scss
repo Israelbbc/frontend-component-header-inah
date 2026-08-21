@@ -239,3 +239,103 @@ $rounded-pill: 50rem  !default;
     }
   }
 }
+
+// ===== Modo oscuro institucional INAH: fondo blanco, elementos en negro =====
+[data-paragon-theme-variant="dark"] .site-header-desktop {
+  background: #ffffff !important;
+  border-bottom: 3px solid #621132;
+
+  .nav-link {
+    color: #000000 !important;
+  }
+
+  .main-nav .nav-link:hover,
+  .main-nav .nav-link:focus,
+  .main-nav .nav-link.active,
+  .secondary-menu-container .nav-link:hover,
+  .secondary-menu-container .nav-link:focus,
+  .secondary-menu-container .nav-link.active {
+    color: #333333 !important;
+  }
+
+  // Botones Login/Registrarse -> negros
+  .secondary-menu-container {
+    .btn-link {
+      color: #000000 !important;
+
+      &:hover,
+      &:focus {
+        color: #000000 !important;
+        opacity: 0.7;
+      }
+    }
+
+    .btn-outline-primary {
+      color: #000000 !important;
+      border-color: #000000 !important;
+      background: transparent;
+
+      &:hover,
+      &:focus {
+        color: $white !important;
+        background: #000000 !important;
+        border-color: #000000 !important;
+      }
+    }
+
+    // Botón "admin" -> invertido (fondo negro, texto blanco)
+    .btn.user-menu-trigger-inah {
+      color: $white !important;
+      border-color: #000000 !important;
+      background: #000000 !important;
+
+      &:hover,
+      &:focus {
+        background: rgba(0, 0, 0, 0.85) !important;
+        color: $white !important;
+      }
+    }
+  }
+
+  // Sol/luna del toggle -> negros
+  .theme-toggle-button {
+    .light-theme-icon,
+    .dark-theme-icon {
+      color: #000000 !important;
+
+      .pgn__icon,
+      svg {
+        color: #000000 !important;
+        fill: #000000 !important;
+      }
+    }
+
+    // Pastilla del switch -> invertida
+    .toggle-switch .switch {
+      .slider {
+        background-color: #cccccc !important;
+
+        &::before {
+          background-color: #000000 !important;
+        }
+      }
+
+      input:checked + .slider {
+        background-color: #4d4d4d !important;
+      }
+    }
+  }
+
+  // Campana -> negra
+  #notificationIcon {
+    .text-primary-500 {
+      color: #000000 !important;
+    }
+
+    svg,
+    path {
+      fill: #000000 !important;
+    }
+  }
+}
+
