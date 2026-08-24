@@ -339,3 +339,23 @@ $rounded-pill: 50rem  !default;
   }
 }
 
+
+// ===== Personalización institucional INAH: LearningHeader (dentro de curso) =====
+.learning-header {
+  background: #000000 !important;
+  border-bottom: 3px solid #621132;
+  box-shadow: none;
+
+  a,
+  .course-title-lockup,
+  .course-title-lockup span,
+  .user-dropdown .btn,
+  .btn-link {
+    color: #ffffff !important;
+  }
+
+  svg,
+  .icon {
+    fill: #ffffff !important;
+  }
+}
