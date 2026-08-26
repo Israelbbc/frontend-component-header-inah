@@ -349,13 +349,149 @@ $rounded-pill: 50rem  !default;
   a,
   .course-title-lockup,
   .course-title-lockup span,
-  .user-dropdown .btn,
   .btn-link {
     color: #ffffff !important;
+  }
+
+  // INAH: botón "admin" (Dropdown.Toggle outline-primary) -> pastilla blanca igual que el header de sitio
+  .user-dropdown {
+    .btn,
+    .btn-outline-primary,
+    .dropdown-toggle {
+      color: #000000 !important;
+      border-color: #000000 !important;
+      background: #ffffff !important;
+
+      &:hover,
+      &:focus {
+        background: rgba(255, 255, 255, 0.85) !important;
+        color: #000000 !important;
+      }
+
+      svg,
+      .icon {
+        fill: #000000 !important;
+      }
+    }
+  }
+
+  .theme-toggle-button {
+    .light-theme-icon,
+    .dark-theme-icon {
+      color: #ffffff !important;
+
+      .pgn__icon,
+      svg {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+      }
+    }
+
+    .toggle-switch .switch {
+      .slider {
+        background-color: #4d4d4d !important;
+
+        &::before {
+          background-color: #ffffff !important;
+        }
+      }
+
+      input:checked + .slider {
+        background-color: #cccccc !important;
+      }
+    }
+  }
+
+  #notificationIcon {
+    .text-primary-500 {
+      color: #ffffff !important;
+    }
+
+    svg,
+    path {
+      fill: #ffffff !important;
+    }
   }
 
   svg,
   .icon {
     fill: #ffffff !important;
+  }
+}
+
+// ===== Modo oscuro institucional INAH: LearningHeader (dentro de curso) =====
+[data-paragon-theme-variant="dark"] .learning-header {
+  background: #ffffff !important;
+  border-bottom: 3px solid #621132;
+
+  a,
+  .course-title-lockup,
+  .course-title-lockup span,
+  .btn-link {
+    color: #000000 !important;
+  }
+
+  .user-dropdown {
+    .btn,
+    .btn-outline-primary,
+    .dropdown-toggle {
+      color: #ffffff !important;
+      border-color: #000000 !important;
+      background: #000000 !important;
+
+      &:hover,
+      &:focus {
+        background: rgba(0, 0, 0, 0.85) !important;
+        color: #ffffff !important;
+      }
+
+      svg,
+      .icon {
+        fill: #ffffff !important;
+      }
+    }
+  }
+
+  .theme-toggle-button {
+    .light-theme-icon,
+    .dark-theme-icon {
+      color: #000000 !important;
+
+      .pgn__icon,
+      svg {
+        color: #000000 !important;
+        fill: #000000 !important;
+      }
+    }
+
+    .toggle-switch .switch {
+      .slider {
+        background-color: #cccccc !important;
+
+        &::before {
+          background-color: #000000 !important;
+        }
+      }
+
+      input:checked + .slider {
+        background-color: #4d4d4d !important;
+      }
+    }
+  }
+
+  #notificationIcon {
+    .text-primary-500 {
+      color: #000000 !important;
+    }
+
+    svg,
+    path {
+      fill: #000000 !important;
+    }
+  }
+
+  svg,
+  .icon {
+    fill: #000000 !important;
   }
 }
