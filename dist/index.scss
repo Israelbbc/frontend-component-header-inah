@@ -163,15 +163,18 @@ $rounded-pill: 50rem  !default;
 
   // INAH: botones de Login/Registrarse en blanco
   .secondary-menu-container {
-    .btn.user-menu-trigger-inah {
+    .menu-trigger {
       color: #000000 !important;
       border-color: #000000 !important;
       background: $white;
 
       &:hover,
-      &:focus {
+      &:focus,
+      &:active,
+      &[aria-expanded="true"] {
         background: rgba(255, 255, 255, 0.85) !important;
         color: #000000 !important;
+        border-color: #000000 !important;
       }
     }
 
@@ -284,15 +287,18 @@ $rounded-pill: 50rem  !default;
     }
 
     // Botón "admin" -> invertido (fondo negro, texto blanco)
-    .btn.user-menu-trigger-inah {
+    .menu-trigger {
       color: $white !important;
       border-color: #000000 !important;
       background: #000000 !important;
 
       &:hover,
-      &:focus {
+      &:focus,
+      &:active,
+      &[aria-expanded="true"] {
         background: rgba(0, 0, 0, 0.85) !important;
         color: $white !important;
+        border-color: #000000 !important;
       }
     }
   }
