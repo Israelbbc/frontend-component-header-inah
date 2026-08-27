@@ -345,6 +345,13 @@ $rounded-pill: 50rem  !default;
   background: #000000 !important;
   border-bottom: 3px solid #621132;
   box-shadow: none;
+  
+  .logo img,
+  .logo img.logo-white {
+    height: 28px !important;
+    width: auto !important;
+    max-width: 140px !important;
+  }
 
   a,
   .course-title-lockup,
@@ -493,5 +500,36 @@ $rounded-pill: 50rem  !default;
   svg,
   .icon {
     fill: #000000 !important;
+  }
+}
+
+// ===== INAH: menú desplegable de usuario (Paragon lo renderiza vía portal, fuera del header) =====
+.dropdown-menu.dropdown-menu-right {
+  background: #ffffff;
+  border: 1px solid #000000;
+
+  .pgn__dropdown-item.dropdown-item {
+    color: #000000 !important;
+
+    &:hover,
+    &:focus {
+      background: rgba(0, 0, 0, 0.08) !important;
+      color: #000000 !important;
+    }
+  }
+}
+
+[data-paragon-theme-variant="dark"] .dropdown-menu.dropdown-menu-right {
+  background: #000000;
+  border: 1px solid #ffffff;
+
+  .pgn__dropdown-item.dropdown-item {
+    color: #ffffff !important;
+
+    &:hover,
+    &:focus {
+      background: rgba(255, 255, 255, 0.12) !important;
+      color: #ffffff !important;
+    }
   }
 }
