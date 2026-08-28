@@ -381,6 +381,13 @@ $rounded-pill: 50rem  !default;
         color: #000000 !important;
       }
 
+      &:focus,
+      &:active,
+      &[aria-expanded="true"] {
+        outline: 2.5px solid #ffffff !important;
+        outline-offset: 0px !important;
+      }
+
       svg,
       .icon {
         fill: #000000 !important;
@@ -456,6 +463,13 @@ $rounded-pill: 50rem  !default;
       &:focus {
         background: rgba(0, 0, 0, 0.85) !important;
         color: #ffffff !important;
+      }
+
+      &:focus,
+      &:active,
+      &[aria-expanded="true"] {
+        outline: 2.5px solid #000000 !important;
+        outline-offset: 0px !important;
       }
 
       svg,
